@@ -1,0 +1,10 @@
+global_seed: 6304
+device: cuda
+precision: fp16
+# Course data repository (cloned next to this repo by the notebook setup cell).
+data_repo_url: https://github.com/AbDu11aHHH/atml-pa4-datasets.git
+data_repo_dir: atml-pa4-datasets
+models:
+  task1_base: Qwen/Qwen2.5-1.5B
+  target_instruct: Qwen/Qwen2.5-1.5B-Instruct
+  draft_instruct: Qwen/Qwen2.5-0.5B-Instruct

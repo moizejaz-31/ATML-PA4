@@ -1,0 +1,57 @@
+# ==============================================================================
+# Gitignore for ATML PA4: Model Compression, Attention & KV Memory, Speculative Decoding
+# Commit: code, configs, split/ID files, environment spec, machine-readable results.
+# Do not commit: datasets, model weights/adapters, caches, the manual or the report.
+# ==============================================================================
+
+# --- Manual & report (the PDF report is submitted on LMS) ---
+manual/
+report/
+*.pdf
+*.tex
+*.bib
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.synctex.gz
+
+# --- Course data repository (cloned by notebooks / setup cell) ---
+atml-pa4-datasets/
+data/
+*.parquet
+*.tar
+*.tar.gz
+*.zip
+
+# --- Model checkpoints, adapters, merged drafts ---
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.safetensors
+**/checkpoints/*
+!**/checkpoints/.gitkeep
+!**/checkpoints/*_history.json
+
+# --- Cached arrays ---
+*.npy
+*.npz
+**/cache/
+
+# --- Python / Jupyter / editors ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+.venv/
+venv/
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db
+wandb/
